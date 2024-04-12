@@ -1,0 +1,52 @@
+<div class="row">
+<div class="col-lg-4 offset-lg-4">
+    <h1 class="titulo">CALCULADORA DE RFC</h1>
+
+    <div class="">
+    <div class="campo">
+        <label for="nombre">NOMBRE:</label>
+        <input type="text" [(ngModel)]="nombre" id="nombre">
+    </div>
+  
+    <div class="campo">
+        <label for="apellidoPaterno">APELLIDO PATERNO:</label>
+        <input type="text" [(ngModel)]="apellidoPaterno" id="apellidoPaterno">
+    </div>
+  
+    <div class="campo">
+        <label for="apellidoMaterno">APELLIDO MATERNO:</label>
+        <input type="text" [(ngModel)]="apellidoMaterno" id="apellidoMaterno">
+    </div>
+  
+    <div class="campo">
+        <label for="diaNacimiento">DÍA DE NACIMIENTO:</label>
+        <input type="number" [(ngModel)]="diaNacimiento" id="diaNacimiento">
+    </div>
+  
+    <div class="campo">
+        <label for="mesNacimiento">MES DE NACIMIENTO:</label>
+        <input type="number" [(ngModel)]="mesNacimiento" id="mesNacimiento">
+    </div>
+  
+    <div class="campo">
+        <label for="añoNacimiento">AÑO DE NACIMIENTO:</label>
+        <input type="number" [(ngModel)]="anioNacimiento" id="anioNacimiento">
+    </div>
+  
+    <button (click)="validarFecha()" class="btn btn-primary btn-lg btn-block btn-color">VALIDAR FECHA</button>
+  
+    <div *ngIf="fechaValida" class="campoB">
+      <p>LA FECHA DE NACIMIENTO ES VÁLIDA.</p>
+    </div>
+    <div *ngIf="!fechaValida" class="campoE"> 
+      <p>LA FECHA DE NACIMIENTO NO ES VÁLIDA.</p>
+    </div>
+  
+    <button (click)="calcularRFC()" class="btn btn-primary btn-lg btn-block btn-color">CALCULAR RFC</button>
+  
+    <div *ngIf="rfc" class="titulo3 campo">
+      <p>RFC (sin homoclave): {{ rfc }}</p>
+    </div>
+</div>
+</div>
+</div>

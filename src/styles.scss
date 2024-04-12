@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.titulo{    
+  font-family: "Honk", system-ui;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 100px;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+.titulo2{    
+    font-family: "Honk", system-ui;
+    text-align: center;
+    margin-top: 25px;
+    font-size: px;
+  }
+.titulo3{    
+    font-family: "Honk", system-ui;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 80px;
+  }
+  .btn-color{
+    background-color: rgb(38, 0, 255);
+    border-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    width: 100%;
+  }
+
+  .btn-color:hover{
+    background-color: rgb(146, 0, 151);
+    border-color: white;
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .titulo4{    
+    font-family: "Honk", system-ui;
+    margin-top: 25px;
+    font-size: 30px;
+  }
+
+  .campo {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .campoB {
+    background-color: #00ff00;
+    border: 1px solid #01eef7;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+    align-items: center;
+    text-align: center;
+  }
+
+  .campoE {
+    background-color: #ff0000;
+    border: 1px solid #fbff00;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+    align-items: center;
+    text-align: center;
+  }
+
